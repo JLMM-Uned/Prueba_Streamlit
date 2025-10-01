@@ -1,0 +1,106 @@
+
+Streamlit es una biblioteca muy completa que se actualiza constantemente. La lista de sus funciones es extensa y se organiza en categorías. A continuación, te proporciono un resumen completo y categorizado de las funciones más importantes, basado en la documentación oficial de Streamlit.
+
+
+### 1. Elementos de Texto y Visualización de Contenido
+
+Estas funciones se utilizan para mostrar información textual y de datos en tu aplicación.
+
+* `st.write()`: La función "mágica" de Streamlit. Renderiza casi cualquier cosa que le pases: texto, DataFrames, gráficos, etc.
+* `st.markdown()`: Muestra texto en formato Markdown.
+* `st.title()`: Muestra un título de gran tamaño.
+* `st.header()`: Muestra un encabezado.
+* `st.subheader()`: Muestra un subencabezado.
+* `st.text()`: Muestra texto de ancho fijo.
+* `st.caption()`: Muestra texto pequeño, a menudo usado para descripciones.
+* `st.code()`: Muestra bloques de código.
+* `st.latex()`: Renderiza expresiones matemáticas en formato LaTeX.
+* `st.json()`: Muestra un objeto JSON.
+
+### 2. Elementos de Datos
+
+Funciones para mostrar datos estructurados como tablas y métricas.
+
+* `st.dataframe()`: Muestra un DataFrame de forma interactiva (se puede ordenar y redimensionar).
+* `st.table()`: Muestra una tabla estática.
+* `st.metric()`: Muestra una métrica clave con un valor y una diferencia (delta) opcional.
+
+### 3. Elementos Multimedia
+
+Funciones para incrustar imágenes, videos y audio.
+
+* `st.image()`: Muestra una imagen.
+* `st.audio()`: Muestra un reproductor de audio.
+* `st.video()`: Muestra un reproductor de video.
+* `st.pdf()`: Muestra un archivo PDF.
+
+### 4. Widgets de Entrada de Usuario
+
+Estas son las funciones interactivas que permiten al usuario interactuar con la aplicación.
+
+* `st.button()`: Muestra un botón.
+* `st.checkbox()`: Muestra una casilla de verificación.
+* `st.radio()`: Muestra un grupo de botones de opción (radio buttons).
+* `st.selectbox()`: Muestra una lista desplegable.
+* `st.multiselect()`: Muestra una lista con selección múltiple.
+* `st.slider()`: Muestra un control deslizante.
+* `st.select_slider()`: Muestra un control deslizante con opciones de selección.
+* `st.text_input()`: Muestra un campo de entrada de texto de una sola línea.
+* `st.number_input()`: Muestra un campo de entrada para números.
+* `st.text_area()`: Muestra un campo de entrada de texto de varias líneas.
+* `st.date_input()`: Muestra un selector de fecha.
+* `st.time_input()`: Muestra un selector de hora.
+* `st.file_uploader()`: Permite al usuario subir archivos.
+* `st.camera_input()`: Permite capturar imágenes con la cámara.
+* `st.color_picker()`: Muestra un selector de color.
+
+### 5. Elementos de Estado y Progreso
+
+Funciones para dar feedback al usuario sobre el estado de la aplicación.
+
+* `st.progress()`: Muestra una barra de progreso.
+* `st.spinner()`: Muestra un indicador de carga.
+* `st.balloons()`: Muestra una animación de globos.
+* `st.snow()`: Muestra una animación de nieve.
+* `st.error()`, `st.warning()`, `st.info()`, `st.success()`: Muestran mensajes de alerta de diferentes tipos.
+* `st.exception()`: Muestra una excepción.
+* `st.toast()`: Muestra un mensaje temporal en la esquina inferior derecha.
+
+### 6. Contenedores y Layouts
+
+Funciones para organizar los elementos en la interfaz de usuario.
+
+* `st.sidebar`: Un contenedor especial para la barra lateral. Se usa con la notación `with`.
+* `st.columns()`: Crea columnas para colocar elementos uno al lado del otro.
+* `st.tabs()`: Crea pestañas para organizar el contenido en secciones.
+* `st.expander()`: Crea un contenedor expandible que oculta/muestra contenido.
+* `st.container()`: Crea un contenedor general para agrupar elementos y aplicar estilos.
+* `st.form()`: Crea un formulario con un botón de "submit" que evita que la aplicación se reejecute hasta que el formulario sea enviado.
+
+### 7. Gráficos
+
+Streamlit tiene funciones integradas para crear gráficos y también soporta bibliotecas de gráficos populares.
+
+* `st.line_chart()`: Muestra un gráfico de líneas.
+* `st.area_chart()`: Muestra un gráfico de área.
+* `st.bar_chart()`: Muestra un gráfico de barras.
+* `st.pyplot()`: Muestra un gráfico de `matplotlib`.
+* `st.altair_chart()`: Muestra un gráfico de `Altair`.
+* `st.plotly_chart()`: Muestra un gráfico de `Plotly`.
+* `st.vega_lite_chart()`: Muestra un gráfico de `Vega-Lite`.
+* `st.deck_gl_chart()`: Muestra un gráfico de `deck.gl`.
+* `st.map()`: Muestra un mapa con puntos.
+
+### 8. Funciones de Sesión y Estado
+
+* `st.session_state`: Un diccionario persistente entre reejecuciones, ideal para almacenar el estado de los widgets.
+* `st.secrets`: Para gestionar claves de API y otros secretos.
+
+### 9. Funciones Avanzadas y de Utilidad
+
+* `st.cache_data()`: Decorador para almacenar en caché resultados de funciones que devuelven datos.
+* `st.cache_resource()`: Decorador para almacenar en caché objetos que son recursos (como conexiones a bases de datos).
+* `st.stop()`: Detiene la ejecución de la aplicación.
+* `st.rerun()`: Re-ejecuta el script desde el inicio.
+* `st.set_page_config()`: Configura el título de la página, el ícono y el layout.
+* `st.echo()`: Muestra el código Python de una sección mientras se ejecuta.
